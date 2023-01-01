@@ -120,6 +120,11 @@ html *::-webkit-scrollbar-track {
             color: var(--dark);
             font-size: 14px;
             margin-top: 10px;
+
+            .link {
+                font-weight: bold;
+                color: var(--bg-messages);
+            }
         }
     }
 }
@@ -165,12 +170,13 @@ html *::-webkit-scrollbar-track {
 
                 .user {
                     display: flex;
+                    align-items: center;
                     gap: 10px;
 
                     img {
                         background-color: var(--text);
-                        width: 32px;
-                        height: 32px;
+                        width: 38px;
+                        height: 38px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
@@ -178,9 +184,11 @@ html *::-webkit-scrollbar-track {
                     span {
                         display: flex;
                         align-items: center;
+                        font-weight: bold;
                     }
 
                     button {
+                        height: 32px;
                         background-color: var(--dark);
                         color: var(--main-color);
                         font-size: 12px;

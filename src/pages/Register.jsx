@@ -1,6 +1,6 @@
 // React Hooks
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -82,7 +82,12 @@ const Register = () => {
                     <button>Sign up</button>
                     {err && <span>Something went wrong!</span>}
                 </form>
-                <p>You do have an account? Login</p>
+                <p>
+                    You do have an account?{' '}
+                    <Link to="/login" className="link">
+                        Login
+                    </Link>
+                </p>
             </div>
         </div>
     );
