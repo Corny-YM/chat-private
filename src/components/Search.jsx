@@ -55,7 +55,7 @@ const Search = () => {
     const handleSelect = async () => {
         // Check whether the group exists, if not => create
         const combinedId =
-            currentUser.uid > user.id
+            currentUser.uid > user.uid
                 ? currentUser.uid + user.uid
                 : user.uid + currentUser.uid;
         try {

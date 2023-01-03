@@ -29,7 +29,13 @@ const Message = ({ message }) => {
                     }
                     alt=""
                 />
-                <span>Just now</span>
+                <span>
+                    {message.date.toDate().getFullYear() +
+                        '/' +
+                        (message.date.toDate().getMonth() + 1) +
+                        '/' +
+                        (message.date.toDate().getDay() + 1)}
+                </span>
             </div>
             <div className="messageContent">
                 {message?.text && <p>{message.text}</p>}
